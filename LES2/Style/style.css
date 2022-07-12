@@ -31,7 +31,7 @@ body{
 /* BG__IMAGE */
 
 .bg__image{
-    background-image: url(/img/bg-image.png);
+    background-image: url('../img/bg-image.png');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 138px 0 180px;
