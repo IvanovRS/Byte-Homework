@@ -6,8 +6,8 @@ body{
     max-width: 1300px;
     margin: 0 auto;
     text-align: center;
-    position: relative;
 }
+
 /* HEADER */
 
 .header__nav{
@@ -46,7 +46,7 @@ body{
 
 .bg__image-button{
     width: 420px;
-    padding: 11px auto;
+    padding: 11px 0;
     font-weight: 700;
     font-size: 36px;
     line-height: 49px;
@@ -54,39 +54,35 @@ body{
     margin-top: 24px;
 }
 
-/* DISCRIPTION */
+/* DESCRIPTION */
 
-.item__1{
+.item__1, .item__2, .item__3{
     position: absolute;
     width: 178px;
     height: 121px;
     background: #BFDEFB;
+    
+}
+
+.item__1{
     top: -121px;
 }
 
 .item__2{
-    position: absolute;
-    width: 178px;
-    height: 121px;
-    background: #BFDEFB;
     top: 125px;
 }
 
 .item__3{
-    position: absolute;
-        width: 178px;
-        height: 121px;
-        background: #BFDEFB;
-        right: 0;
+    right: 0;
 }
 
-.discription{
+.description{
     background-color: rgba(26, 110, 136, 0.71);
     padding: 133px 0;
     margin-bottom: 221px;
 }
 
-.discription__text{
+.description__text{
     font-weight: 400;
     font-size: 36px;
     line-height: 49px;
@@ -95,8 +91,11 @@ body{
     margin: 0 auto;
 }
 
+/* TEXT 1 - TEXT 2 */
+
 .text1{
     margin-bottom: 216px;
+    position: relative;
 }
 
 .text2 {
@@ -130,6 +129,8 @@ body{
     border-radius: 50%;
     transform: translate(50%);
 }
+  
+/* FORM */
 
 .input, .button{
     width: 647px;
@@ -178,6 +179,5 @@ input::placeholder{
     background-color: #5C98AB;
     font-weight: 700;
     font-size: 36px;
-    text-align: center;
     color: #FFFFFF;
 }
