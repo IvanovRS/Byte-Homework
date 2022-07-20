@@ -147,6 +147,7 @@ body{
     font-size: 36px;
     padding-top: 36px;
     padding-bottom: 11px;
+    padding-left: 32px;
 }
 
 .form__inputs{
@@ -171,8 +172,12 @@ body{
 }
 
 input::placeholder{
-    padding: 33px 318px 14px 32px;
+    padding: 33px 318px 14px 0;
     color: #000000;
+}
+
+.form_button{
+    text-align: center;
 }
 
 .button {
