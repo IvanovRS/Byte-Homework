@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+/* GRID */
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(6, 50px); 
+    gap: 20px;
+    margin: 50px;
+}
+
+.item{
+    background-color:rgb(221, 203, 240);
+}
+
+.item:nth-child(1), .item:nth-child(3), .item:nth-child(5){
+    grid-column: span 2;
+}
+
+.item:nth-child(2), .item:nth-child(6){
+    grid-column: span 3;
+}
+
+.item:nth-child(1),.item:nth-child(3),.item:nth-child(6){
+    grid-row: span 2;
+}
+
+.item:nth-child(2), .item:nth-child(5){
+    grid-row: span 3;
+}
+
+/* GRID 2 */
+
+.grid_2 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(5, 100px);
+    margin: 50px;
+}
+
+.item_2 {
+    background-color: rgb(242, 123, 100);
+}
+
+.item_2:nth-child(1), .item_2:nth-child(2), .item_2:nth-child(7), .item_2:nth-child(8), .item_2:nth-child(9){
+    grid-row: span 2;
+}
+
+.item_2:nth-child(3), .item_2:nth-child(11){
+    grid-column: span 3;
+}
+
+.item_2:nth-child(4), .item_2:nth-child(6){
+    grid-row: span 3;
+}
+
+.item_2:nth-child(5){
+    grid-column: span 2;
+}
+
+/* GRID 3 */
+
+.grid_3 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(5, 100px);
+    margin: 50px;
+}
+
+.item_3 {
+    background-color: rgb(123, 52, 230);
+}
+
+.item_3:nth-child(1) {
+    grid-column: span 3;
+    background-color: rgb(233, 55, 206)
+}
+
+.item_3:nth-child(2), .item_3:nth-child(3),.item_3:nth-child(7){
+    grid-column: span 2;
+    background-color: aqua
+}
+
+.item_3:nth-child(4){
+    grid-column: span 5;
+    background-color: red
+}
+
+.item_3:nth-child(5), .item_3:nth-child(1){
+    grid-row: span 2;
+}
+
+.item_3:nth-child(5){
+    background-color: aqua
+}
+
+.item_3:nth-child(10){
+    grid-column: span 3;
+}
+
+.item_3:nth-child(6),.item_3:nth-child(8),.item_3:nth-child(9){
+    background-color: blue
+}
+
+.item_3:nth-child(10){
+    background-color: greenyellow
+}
