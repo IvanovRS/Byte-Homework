@@ -18,6 +18,10 @@ body{
     align-items: center;
 }
 
+.flex_start {
+    justify-content: start;
+}
+
 .logo img{
     margin-right: 15px;
 }
@@ -64,7 +68,7 @@ body{
     font-weight: bold;
 }
 
-.header_button{
+.button{
     width: 160px;
     height: 48px;
     border: none;
@@ -74,12 +78,13 @@ body{
     line-height: 13px;
     color: #FFFFFF;
     font-weight: 700;
+    transition: 1s all;
 }
 
-.header_button:hover{
+.button:hover{
     cursor: pointer;
-    transition: 1s;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #1327db;
+    transition: 1s all;
+    background: #5f0aa4;
 }
 
 /* what_is_it */
@@ -113,6 +118,134 @@ body{
 
 .logos{
     padding: 30px 0 106px;
+}
+
+/* inbox */
+
+.inbox{
+    background:rgba(252, 240, 227, 0.4);
+    padding: 115px 0 116px;
+}
+
+.inbox_response{
+    max-width: 519px;
+    width: 100%;
+    background: white;
+    padding: 30px 30px 24px;
+    box-sizing: border-box;
+    border-bottom: 4px solid #0185D0;
+}
+
+.inbox_text{
+    font-size: 20px;
+    line-height: 28px;
+    color: #2B292D;
+    margin-bottom: 26px;
+}
+
+.inbox_text-bold{
+    font-weight: 700;
+}
+
+.inbox_name{
+    font-weight: 700;
+    line-height: 22px;
+    color: #2B292D;
+}
+
+.inbox_position{
+    line-height: 22px;
+    color: rgba(43, 41, 45, 0.6);
+}
+
+.inbox_img{
+    margin-right: 11px;
+}
+
+.info_pretitle{
+    font-size: 22px;
+    line-height: 34px;
+    margin-bottom: 26px;
+}
+
+.info_pretitle-orange{
+    color: #F1592B;
+    font-weight: bold;
+}
+
+.info_title{
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+    color: #2B292D;
+    max-width: 462px;
+    margin-bottom: 26px;
+}
+
+.info_text{
+    font-size: 24px;
+    line-height: 34px;
+    color: #2B292D;
+    max-width: 461px;
+    margin-bottom: 44px;
+}
+
+/* build */
+
+.flex_build{
+    
+}
+
+.build{
+    padding: 123px 0 105px;
+    background: #F2F2F2;
+}
+
+.build_info{
+    margin-bottom: 129px;
+}
+
+.info_pretitle-blue {
+    color: #0189D1;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.info_title-mb30 {
+    margin-bottom: 30px;
+}
+
+.build_grid{
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 130px);
+        gap: 30px;
+}
+
+.build_information{
+    max-width: 360px;
+    box-sizing: border-box;
+}
+
+.build_text{
+    font-size: 18px;
+    line-height: 26px;
+    color: #2B292D;
+}
+
+.build_span{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #2B292D;
+}
+
+.build_link{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #3040C4;
 }
 
 /* understand */
@@ -159,12 +292,13 @@ body{
     background-color: #fff;
     border: none;
     margin-bottom: 111px;
+    transition: 1s all;
 }
 
 .understand_button:hover{
     background-color: #3040C4;
     color:#fff;
-    transition: 0.5s;
+    transition: 1s all;
 }
 
 .understand_button_2{
@@ -187,12 +321,13 @@ body{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     padding: 22px 0 33px;
+    transition: 1s all;
 }
 
 .understand_grid_box:hover{
     background-color: #3141C5;
     color: #FFFFFF;
-    transition: 0.5s;
+    transition: 1s all;
 }
 
 .understand_img{
@@ -202,6 +337,10 @@ body{
     font-size: 22px;
     line-height: 28px;
     font-weight: bold;
+}
+
+.logos-pd62{
+    padding: 62px 0;
 }
 
 /* FOTO */
