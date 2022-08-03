@@ -399,6 +399,39 @@ body{
         max-width: 750px;
     }
 
+    .questions{
+        padding: 30px 0 34px;
+    }
+
+    .questions .flex{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .questions_about:nth-child(1){
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 34px;
+    }
+   
+    .questions_about, .questions_block{
+        padding: 0;
+        max-width: 432px;
+        /* margin: 0 auto; */
+    }
+
+    .logos{
+        padding: 25px 0 41px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .logos-pd62{
+        padding: 73px 0 87px;
+    }
+
     .logo_text{
         display: none;
     }
@@ -435,6 +468,49 @@ body{
     .inbox_response{
         margin: 0 auto 75px;
         text-align: start;
+    }
+
+    .build{
+        padding: 73px 0 38px;
+    }
+
+    .build .flex{
+        flex-direction: column;
+    }
+
+    .build_information:nth-child(2), .build_information:nth-child(3){
+        display: none;
+    }
+
+    .build_information{
+        text-align: center;
+    }
+
+    .build_grid{
+        grid-template-columns: repeat(1, 322px);
+        grid-template-rows: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    .info_subtitle-blue{
+        margin-bottom: 18px;
+    }
+
+    .info_title-mb30{
+        max-width: 318px;
+        margin-bottom: 19px;
+    }
+
+    .build_info{
+        margin-bottom: 0px;
+    }
+
+    .container-image_img{
+        margin-bottom: 38px;
+    }
+
+    .build_info button{
+        margin-bottom: 37px;
     }
 
     .foto_grid{
@@ -531,6 +607,19 @@ body{
         padding: 8px 0;
     }
 
+    .questions {
+        padding: 46px 0 ;
+    }
+
+    .questions_about:nth-child(1) {
+        margin-bottom: 20px;
+    }
+
+    .questions_about,
+    .questions_block {
+        max-width: 290px;
+    }
+
     .logo img {
         margin-right: 13px;
     }
@@ -542,6 +631,60 @@ body{
     .container-image{
         margin-bottom: 32px;    
     }
+
+
+        .build {
+            padding: 53px 0;
+        }
+    
+        .build_information:nth-child(2),
+        .build_information:nth-child(3) {
+            display: grid;
+        }
+
+        .build_information:nth-child(3) {
+            margin-bottom: 0px;
+        }
+    
+        .build_information {
+            text-align: start;
+            margin-bottom: 33px;
+        }
+    
+        .build_grid {
+            grid-template-columns: repeat(1, 290px);
+        }
+    
+        .info_subtitle-blue {
+            margin-bottom: 17px;
+        }
+    
+        .info_title-mb30 {
+            max-width: 290px;
+            margin-bottom: 18px;
+        }
+
+        .build_info .info_text{
+            margin-bottom: 30px;
+        }
+    
+        .build_info {
+            margin-bottom: 0px;
+        }
+    
+        .container-image .container-image_img{
+            margin-bottom: 79px;
+        }
+
+        .build_grid::before{
+            content: "";
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            max-width: 150px;
+        }
+    
+        .build_info button {
+            margin-bottom: 40px;
+        }
 
     .flex__inbox-column{
         flex-direction: column;
