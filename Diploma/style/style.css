@@ -22,6 +22,8 @@ body{
     justify-content: start;
 }
 
+/* HEADER */
+
 .logo img{
     margin-right: 15px;
 }
@@ -56,6 +58,20 @@ body{
     bottom: -3px;
 }
 
+.check{
+    width: 30px;
+    height: 3px;
+    background-color: black;
+}
+
+.check:not(:last-of-type){
+    margin-bottom: 4px;
+}
+
+.checkbox, .check-wrapper{
+    display: none;
+}
+
 .header_ul{
     margin-right: 75px;
 }
@@ -85,6 +101,47 @@ body{
     cursor: pointer;
     transition: 1s all;
     background: #5f0aa4;
+}
+
+/* MAIN */
+
+.main{
+    background-color: #F3C6BD;
+    position: relative;
+    padding-bottom: 126px;
+}
+
+.main_container > div:first-of-type{
+    z-index: 1;
+}
+
+.main_container > div:last-of-type {
+    z-index: 0;
+    position: absolute;
+    right: 25px;
+}
+
+.main_title{
+    font-size: 80px;
+    line-height: 78px;
+    letter-spacing: -0.5px;
+    color: #2B292D;
+    font-weight: bold;
+    max-width: 754px;
+    margin-bottom: 34px;
+}
+
+.main_text{
+    font-size: 24px;
+    line-height: 34px;
+    color: #2B292D;
+    max-width: 456px;
+    margin-bottom: 54px;
+}
+
+.button_white{
+    background-color: #fff;
+    color: #3040C4;
 }
 
 /* questions */
@@ -304,7 +361,7 @@ body{
 .understand_grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 300px);
+    grid-template-rows: repeat(1, 1fr);
     gap: 50px;
 }
 
@@ -387,6 +444,83 @@ body{
         max-width: 1040px;
     }
 
+    .checkbox, .check-wrapper{
+        display: block;
+    }
+
+    .menu{
+        position: relative;
+    }
+
+    .checkbox{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        margin: 0;
+        top: 0;
+        right: 0;
+        opacity: 0;
+        z-index: 2;
+    }
+
+    .check-wrapper{
+        position: relative;
+        z-index: 1;
+    }
+
+    .checkbox:checked ~ .check-wrapper > .check:first-of-type{
+        transform: rotate(45deg) translate(13px, 8px);
+    }
+
+    .checkbox:checked ~ .check-wrapper>.check:nth-last-of-type(2) {
+        opacity: 0;
+    }
+
+    .checkbox:checked~.check-wrapper>.check:last-of-type {
+        transform: rotate(-45deg) translate(2px, 3px);
+    }
+
+    .check{
+        transition: 300ms;
+    }
+
+    .checkbox:checked ~ .header_nav{
+        display: block;
+        position: fixed;
+        background-color: beige;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+        padding-top: 40px;
+    }
+    
+    /* XZ */
+
+    /* .checkbox:checked ~ .main_container{
+        display: none;
+        opacity: 0;
+        z-index: -1;
+    } */
+
+    .header_ul > .header_li{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .header_nav > .header_ul{
+        margin-right: 0;
+    }
+
+    .flex_menu{
+        flex-direction: column;
+    }
+
+    .header_nav{
+        display: none;
+    }
+
     .header_ul{
         margin-right: 50px;
     }
@@ -444,6 +578,44 @@ body{
         flex-direction: column-reverse;
     }
 
+    .main {
+        padding-bottom: 0px;
+    }
+
+    .main_title {
+        font-size: 60px;
+        line-height: 72px;
+        max-width: 525px;
+        margin-bottom: 15px;
+    }
+
+    .main_text {
+        font-size: 20px;
+        line-height: 26px;
+        max-width: 355px;
+        margin-bottom: 15px;
+    }
+
+    .main_container_button{
+        max-width: 124px;
+        font-size: 16px;
+        line-height: 13px;
+    }
+
+    .main_container{
+        flex-direction: column;
+    }
+    
+    .main_container>div:last-of-type {
+        z-index: 0;
+        position: static;
+        right: 217px;
+    }
+
+    .main_container_img>img {
+        max-width: 100%;
+    }
+
     .inbox{
         padding: 56px 0 69px;
     }
@@ -487,7 +659,7 @@ body{
     }
 
     .build_grid{
-        grid-template-columns: repeat(1, 322px);
+        grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
         justify-content: center;
     }
@@ -543,7 +715,7 @@ body{
 
     .understand_grid {
         display: grid;
-        grid-template-columns: repeat(2, 263px);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 38px 64px;
         max-width: 588px;
@@ -601,6 +773,10 @@ body{
 
     .inbox{
         padding: 40px 0;
+    }
+
+    .understand_grid {
+        gap: 38px 40px;
     }
 
     .inbox_response{
@@ -672,14 +848,58 @@ body{
 
     .logo img {
         margin-right: 13px;
+        max-width: 100%;
     }
 
     .logos {
         padding: 0 0 50px;
         display: grid;
-        grid-template-columns: repeat(3, 107px);
-        grid-template-rows: repeat(2, 94px);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         gap: 0;
+    }
+
+    .main {
+        padding: 35px 0 36px;
+    }
+
+    .main_title {
+        font-size: 50px;
+        line-height: 50px;
+        letter-spacing: -0.3125px;
+        max-width: 290px;
+        margin-bottom: 24px;
+    }
+
+    .main_text {
+        font-size: 24px;
+        line-height: 34px;
+        max-width: 290px;
+        margin-bottom: 30px;
+    }
+
+    .main_container_button{
+        max-width: 100%;
+    }
+
+    .main_buttons > button:nth-child(1), .main_buttons >button:nth-child(2) {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .button_white{
+        margin-top: 15px;
+        margin-bottom: 33px;
+    }
+
+    .main_container {
+        flex-direction: column;
+    }
+
+    .main_container>div:last-of-type {
+        z-index: 0;
+        position: static;
+        right: 0px;
     }
 
     .inbox{
@@ -709,7 +929,7 @@ body{
     }
 
     .build_grid {
-        grid-template-columns: repeat(1, 290px);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .info_subtitle-blue {
