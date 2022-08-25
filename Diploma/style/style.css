@@ -24,6 +24,11 @@ body{
 
 /* HEADER */
 
+.logo{
+    display: flex;
+    align-items: center;
+}
+
 .logo img{
     margin-right: 15px;
 }
@@ -442,9 +447,9 @@ body{
     padding: 134px 0 53px;
 }
 
-.flex{
-    justify-content: start;
-    align-items: flex-start;
+.footer_flex{
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer_text{
@@ -462,12 +467,6 @@ body{
 
 .footer_column1{
     margin-bottom: 59px;
-}
-
-.footer_product{
-    margin-left: 126px;
-    margin-right: 150px;
-    
 }
 
 .footer_product_title, .footer_company_title{
@@ -491,12 +490,12 @@ body{
 
 .footer_icons{
     justify-content: right;
+    margin-top: 16px;
 }
 
-.footer_anderline{
+.footer_underline{
     align-items: flex-start;
 }
-
 
 .footer_license{
     font-size: 14px;
@@ -511,6 +510,22 @@ body{
 
 .footer_icons_mr{
     margin-right: 20px;
+}
+
+/* MEDIA 1920px */
+
+@media screen and (max-width: 1920px){
+    .container {
+        max-width: 1040px;
+    }
+}
+
+/* MEDIA 1440px */
+
+@media screen and (max-width: 1440px) {
+    .container {
+        max-width: 1040px;
+    }
 }
 
 /* MEDIA 1200px */
@@ -573,14 +588,6 @@ body{
         padding-top: 40px;
         z-index: 2;
     }
-    
-    /* XZ */
-
-    /* .checkbox:checked ~ .main_container{
-        display: none;
-        opacity: 0;
-        z-index: -1;
-    } */
 
     .header_ul > .header_li{
         margin-right: 0;
