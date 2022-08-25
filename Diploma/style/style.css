@@ -436,6 +436,83 @@ body{
     grid-row: span 2;
 }
 
+/* FOOTER */
+
+.footer{
+    padding: 134px 0 53px;
+}
+
+.flex{
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.footer_text{
+    margin-bottom: 25px;
+    margin-top: 30px;
+    max-width: 360px;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(43, 41, 45, 0.6);
+}
+
+.footer_social{
+    margin-right: 10px;
+}
+
+.footer_column1{
+    margin-bottom: 59px;
+}
+
+.footer_product{
+    margin-left: 126px;
+    margin-right: 150px;
+    
+}
+
+.footer_product_title, .footer_company_title{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: #2B292D;
+    margin-bottom: 18px;
+}
+
+.footer_product_text{
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(43, 41, 45, 0.6);
+}
+
+.footer_line{
+    border: 1px solid #2B292D;
+    opacity: 0.1;
+}
+
+.footer_icons{
+    justify-content: right;
+}
+
+.footer_anderline{
+    align-items: flex-start;
+}
+
+
+.footer_license{
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(43, 41, 45, 0.6);
+    margin-top: 13px;
+}
+
+.footer_license_mr{
+    margin-right: 15px;
+}
+
+.footer_icons_mr{
+    margin-right: 20px;
+}
+
 /* MEDIA 1200px */
 
 @media screen and (max-width: 1200px){
@@ -460,12 +537,12 @@ body{
         top: 0;
         right: 0;
         opacity: 0;
-        z-index: 2;
+        z-index: 4;
     }
 
     .check-wrapper{
         position: relative;
-        z-index: 1;
+        z-index: 3;
     }
 
     .checkbox:checked ~ .check-wrapper > .check:first-of-type{
@@ -494,6 +571,7 @@ body{
         right: 0;
         text-align: center;
         padding-top: 40px;
+        z-index: 2;
     }
     
     /* XZ */
