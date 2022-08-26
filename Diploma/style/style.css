@@ -112,8 +112,11 @@ body{
 
 .main{
     background-color: #F3C6BD;
-    position: relative;
     padding-bottom: 126px;
+}
+
+.main_container{
+    position: relative;
 }
 
 .main_container > div:first-of-type{
@@ -401,6 +404,44 @@ body{
     padding: 62px 0;
 }
 
+/* ABOUT */
+
+.about-items{
+    max-width: 750px;
+    margin: 0 auto 20px;
+    box-sizing: border-box;
+    padding: 26px 25px;
+    border: 1px solid rgba(43, 41, 45, 0.2);
+    border-radius: 8px;
+}
+
+.about-text{
+    margin-top: 3px;
+    max-width: 410px;
+    font-size: 18px;
+    line-height: 26px;
+    display: none;
+}
+
+.about-pretitle{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.about-rotate-icon{
+    transform: rotate(90deg);
+    transition: 300ms;
+}
+
+.change-color{
+    color:#fff;
+    background: #3141C5;
+    border: #3141C5;;
+    box-shadow: 0px 13px 18px -8px rgba(0, 0, 0, 0.15), 0px 11px 55px 10px rgba(0, 0, 0, 0.07);
+    transition: 300ms;
+}
+
 /* FOTO */
 
 .foto{
@@ -510,22 +551,6 @@ body{
 
 .footer_icons_mr{
     margin-right: 20px;
-}
-
-/* MEDIA 1920px */
-
-@media screen and (max-width: 1920px){
-    .container {
-        max-width: 1040px;
-    }
-}
-
-/* MEDIA 1440px */
-
-@media screen and (max-width: 1440px) {
-    .container {
-        max-width: 1040px;
-    }
 }
 
 /* MEDIA 1200px */
