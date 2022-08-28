@@ -6,8 +6,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"> -->
+    
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/carusel.css">
     <title>Diploma</title>
 </head>
 <body>
@@ -62,7 +66,7 @@
                     <button class="button main_container_button">
                         Get Started
                     </button>
-                    <button class="button main_container_button button_white">
+                    <button id="open-modal" class="button main_container_button button_white">
                         Learn More
                     </button>
                 </div>
@@ -123,6 +127,72 @@
                 <img src="./img/logos/a6.png" alt="logo google">
             </a>
         </div>
+    </section>
+    <section class="features">
+       <div class="container">
+            <div class="features_info features_info-container">
+                <h4 class="features_pretitle">
+                    Features
+                </h4>
+                <h3 class="features_title">
+                    Easily find leads and customers
+                </h3>
+                <p class="features_text">
+                    Send one-off and automated email, push, and in-app messages to people. Create better stories.
+                </p>
+                <div class="features_item_1">
+                    <div class="features_item">
+                        <img src="./img/Features/Icon1.svg" alt="icon1">
+                        <p class="features_item_title">
+                            Acquire new customers
+                        </p>
+                    </div>
+                    <div class="features_item_text">
+                        <p class="features_item_text-none">
+                            Everything you need to start building – including open-source code, documentation.
+                        </p>
+                    </div>
+                    <div class="features_item_hr">
+                    </div>
+                </div>
+                <div class="features_item_1">
+                    <div class="features_item">
+                        <img src="./img/Features/Icon2.svg" alt="icon2">
+                        <p class="features_item_title">
+                            Engage users
+                        </p>
+                    </div>
+                    <div class="features_item_text">
+                        <p class="features_item_text-none">
+                            Everything you need to start building – including open-source code, documentation.
+                        </p>
+                    </div>
+                    <div class="features_item_hr">
+                    </div>
+                </div>
+                <div class="features_item_1">
+                    <div class="features_item">
+                        <img src="./img/Features/Icon3.svg" alt="icon3">
+                        <p class="features_item_title">
+                            Develop across platforms
+                        </p>
+                    </div>
+                    <div class="features_item_text">
+                        <p class="features_item_text-none">
+                            Everything you need to start building – including open-source code, documentation.
+                        </p>
+                    </div>
+                    <div class="features_item_hr">
+                    </div>
+                </div>
+            </div>
+        <div class="features_img-large">
+            <img src="./img/Features/Invision Screen.png" alt="Invision Screen">
+        </div>
+        <div class="features_img-small">
+            <img src="./img/Features/ouch.svg" alt="ouch">
+        </div>
+       </div>
     </section>
     <section class="inbox">
         <div class="container flex flex__inbox-column">
@@ -276,7 +346,79 @@
             </a>
         </div>
     </section>
+    <section class="container" >
+        <div class="carusel">
+            <div  class="carusel_img">
+                <img src="./img/carusel/ouch.png" alt="carusel_img">
+            </div>
+            <div>
+                <h5 class="carusel_pretitle">
+                    Trusted by the world’s most innovative businesses – big and small
+                </h5>
+                <p class="carusel_text">
+                    “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find
+                    freelancers. Perfect for sales, marketing, and support”
+                </p>
+               <div>
+                    <p class="carusel_name">
+                        Viella Malkovich
+                    </p>
+                    <p class="carusel_position">
+                        Creative Director at Johnson
+                    </p>
+               </div>
+            </div>
+            <div>
+                <h5 class="carusel_pretitle">
+                    Trusted by the world’s most innovative businesses – big and small
+                </h5>
+                <p class="carusel_text">
+                    “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails,
+                    find
+                    freelancers. Perfect for sales, marketing, and support”
+                </p>
+                <div>
+                    <p class="carusel_name">
+                        Viella Malkovich
+                    </p>
+                    <p class="carusel_position">
+                        Creative Director at Johnson
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h5 class="carusel_pretitle">
+                    Trusted by the world’s most innovative businesses – big and small
+                </h5>
+                <p class="carusel_text">
+                    “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails,
+                    find
+                    freelancers. Perfect for sales, marketing, and support”
+                </p>
+                <div>
+                    <p class="carusel_name">
+                        Viella Malkovich
+                    </p>
+                    <p class="carusel_position">
+                        Creative Director at Johnson
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="carusel_hr"></div>
     <section class="about">
+        <div class="container">
+            <h3 class="about_title">
+                We’re hiring
+            </h3>
+            <p class="about_text">
+                We’re a team of lifelong learners. We’re equal parts left and right brained.
+            </p>
+            <button class="about_button">
+                More about Company
+            </button>
+        </div>
         <div class="container">
             <div class="about-items">
                 <div class="flex">
@@ -350,13 +492,13 @@
     <footer class="footer">
        <div class="container footer_flex">
             <div class="footer_column1">
-                <div class="logo ">
+                <div class="logo logo-footer">
                     <img src="./img/header/logo.svg" alt="logo">
                     <div>
                         <h6 class="logo_title">
                             Foundation
                         </h6>
-                        <p class="logo_text">
+                        <p class="logo_text logo_text-footer">
                             Startup landing template
                         </p>
                     </div>
@@ -364,12 +506,14 @@
                 <p class="footer_text">
                     Foundation is a website template for startups and small teams. It helps to build a website in no time.
                 </p>
-                <a class="footer_social" href="#">
-                    <img src="./img/footer/AppStore.png" alt="social button apple">
-                </a>
-                <a href="#">
-                    <img src="./img/footer/Google Play.png" alt="social button google">
-                </a>
+                <div class="footer_social-black-link">
+                    <a class="footer_social" href="#">
+                        <img src="./img/footer/AppStore.png" alt="social button apple">
+                    </a>
+                    <a  href="#">
+                        <img src="./img/footer/Google Play.png" alt="social button google">
+                    </a>
+                </div>
             </div>
             <div class="footer_product">
                 <h5 class="footer_product_title">
@@ -408,6 +552,45 @@
                     Support
                 </p>
             </div>
+            <div class="footer_nav-adapt">
+                <div class="footer_product-adapt">
+                    <h5 class="footer_product_title">
+                        Product
+                    </h5>
+                    <p class="footer_product_text">
+                        Acquire Users
+                    </p>
+                    <p class="footer_product_text">
+                        Content Marketing
+                    </p>
+                    <p class="footer_product_text">
+                        Website Templates
+                    </p>
+                    <p class="footer_product_text">
+                        Customer Management
+                    </p>
+                    <p class="footer_product_text">
+                        Virtual Inbox
+                    </p>
+                </div>
+                <div class="footer_company-adapt">
+                    <h5 class="footer_company_title">
+                        Company
+                    </h5>
+                    <p class="footer_product_text">
+                        About Foundation
+                    </p>
+                    <p class="footer_product_text">
+                        Brand Guidelines
+                    </p>
+                    <p class="footer_product_text">
+                        Press Kit
+                    </p>
+                    <p class="footer_product_text">
+                        Support
+                    </p>
+                </div>
+            </div>
        </div>
        <div class="footer_line">
        </div>
@@ -436,9 +619,25 @@
             </div>
        </div>
     </footer>
+    <div class="modal-overlay">
+        <div class="modal">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veniam ab quis explicabo laboriosam architecto incidunt, odit voluptate amet, voluptates quam quaerat repellendus, sint laborum provident! Exercitationem iure repellendus ut.
+            </p>
+            <p class="close">
+                x
+            </p>
+        </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="./script/script.js"></script>
+    
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js">
+    </script>
+    <script src="./script/bxslider.js"></script>     -->
+
+    <script src="./script/script.js"></script>
+    <script src="./script/modal.js"></script>
 </body>
 </html>
