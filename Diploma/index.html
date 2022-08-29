@@ -5,14 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/carusel.css">
@@ -44,7 +39,7 @@
                 <nav class="header_nav flex">
                     <ul class="header_ul flex flex_menu">
                         <li class="header_li">
-                            <a class="header_link" href="#">Home</a>
+                            <a class="header_link" id="about-link" href="#">Home</a>
                         </li>
                         <li class="header_li">
                             <a class="header_link" href="#">Stories</a>
@@ -364,13 +359,11 @@
                </div>
             </div>
             <div>
-                <h5 class="carusel_pretitle">
+                <h5 class="carusel_pretitle carusel_pretitle-yell">
                     Trusted by the world’s most innovative businesses – big and small
                 </h5>
                 <p class="carusel_text">
-                    “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails,
-                    find
-                    freelancers. Perfect for sales, marketing, and support”
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus totam necessitatibus ducimus veritatis exercitationem. Atque, quod animi suscipit provident vel libero ullam dolor cum. Hic minima sequi neque ratione cupiditate!
                 </p>
                 <div>
                     <p class="carusel_name">
@@ -382,13 +375,11 @@
                 </div>
             </div>
             <div>
-                <h5 class="carusel_pretitle">
+                <h5 class="carusel_pretitle carusel_pretitle-viol">
                     Trusted by the world’s most innovative businesses – big and small
                 </h5>
                 <p class="carusel_text">
-                    “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails,
-                    find
-                    freelancers. Perfect for sales, marketing, and support”
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, unde!
                 </p>
                 <div>
                     <p class="carusel_name">
@@ -405,7 +396,7 @@
         </div>
     </section>
     <div class="carusel_hr"></div>
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
             <h3 class="about_title">
                 We’re hiring
@@ -627,16 +618,18 @@
             </p>
         </div>
     </div>
+    <div id="up">
+        <span>></span>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-   
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js">
     </script>
     <script src="./script/bxslider.js"></script>    
-
     <script src="./script/script.js"></script>
     <script src="./script/modal.js"></script>
+    <script src="./script/upButton.js"></script>
 </body>
 </html>

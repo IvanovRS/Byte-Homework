@@ -520,6 +520,14 @@ body{
     margin-bottom: 28px;
 }
 
+.carusel_pretitle-yell{
+    color: rgb(179, 179, 31);
+}
+
+.carusel_pretitle-viol{
+    color: violet;
+}
+
 .carusel_text{
     max-width: 750px;
     margin: 0 auto;
@@ -770,6 +778,29 @@ body{
     top: 20px;
     right: 40px;
     cursor: pointer;
+}
+
+#up{
+    display: none;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    bottom: 50px;
+    right: 50px;
+    background-color: #F3C6BD;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+
+#up span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    transform: rotate(-90deg) translate(80%, -30%);
 }
 
 /* MEDIA 1200px */
@@ -1026,6 +1057,7 @@ body{
     }
 
     .build_grid{
+        max-width: 322px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
         justify-content: center;
@@ -1118,10 +1150,8 @@ body{
 
     .carusel_img {
         position: relative;
-        transform: translate(-50%, -50%);
-        bottom: -100px;
-        right: -620px;
-        z-index: 1;
+        bottom: 0px;
+        right: -30%;
     }
 
     .about_title {
@@ -1188,6 +1218,10 @@ body{
         margin-bottom: 50px;
     }
 
+    .features_img-l {
+        max-width: 500px;
+    }
+
     .features_img-small {
         display: none;
     }
@@ -1214,14 +1248,15 @@ body{
         text-align: center;
     }
 
+    .build_grid {
+        max-width: 322px;
+    }
     .carusel_img {
         position: relative;
-        transform: translate(-50%, -50%);
-        bottom: -100px;
-        right: -370px;
-        z-index: 1;
+        bottom: 0px;
+        right: -30%;
     }
-
+    
     .footer_text{
         margin: 0 auto;
         margin-bottom: 32px;
@@ -1257,12 +1292,18 @@ body{
         margin-bottom: 20px;
     }
 
+    .features_img-l {
+        max-width: 430px;
+    }
+
+    .build_grid {
+        max-width: 322px;
+    }
+
     .carusel_img {
         position: relative;
-        transform: translate(-50%, -50%);
-        bottom: -100px;
-        right: -300px;
-        z-index: 1;
+        bottom: 0px;
+        right: -30%;
     }
 
     .info_title{
@@ -1288,10 +1329,8 @@ body{
 
     .carusel_img {
         position: relative;
-        transform: translate(-50%, -50%);
-        bottom: -100px;
-        right: -180px;
-        z-index: 1;
+        bottom: 0px;
+        right: -30%;
     }
 }
 
@@ -1590,6 +1629,12 @@ body{
 
     .carusel_text{
         margin-bottom: 32px;
+    }
+
+    .carusel_img {
+        position: relative;
+        bottom: 0px;
+        right: -30%;
     }
 
     .flex__inbox-column{
