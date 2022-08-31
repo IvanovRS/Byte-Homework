@@ -867,7 +867,7 @@ body{
     .checkbox:checked~.check-wrapper, .checkbox:checked{
         position: fixed;
         top: 5%;
-        right: 20%;
+        right: 10%;
         cursor: pointer;
     }
 
@@ -1659,6 +1659,7 @@ body{
     .info{
         text-align: start;
     }
+
     .info_subtitle{
         margin-bottom: 17px;
     }
