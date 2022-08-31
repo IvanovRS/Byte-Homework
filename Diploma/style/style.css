@@ -864,6 +864,13 @@ body{
         z-index: 2;
     }
 
+    .checkbox:checked~.check-wrapper, .checkbox:checked{
+        position: fixed;
+        top: 5%;
+        right: 20%;
+        cursor: pointer;
+    }
+
     .header_ul > .header_li{
         margin-right: 0;
         margin-bottom: 20px;
@@ -1007,7 +1014,8 @@ body{
     }
 
     .features_item {
-        margin-bottom: 49px;
+        margin-top: 21px;
+        margin-bottom: 22px;
     }
 
     .features_img-large{
@@ -1254,7 +1262,7 @@ body{
     .carusel_img {
         position: relative;
         bottom: 0px;
-        right: -30%;
+        right: -20%;
     }
     
     .footer_text{
@@ -1292,6 +1300,10 @@ body{
         margin-bottom: 20px;
     }
 
+    .logos>div>a>img {
+        max-width: 100%
+    }
+
     .features_img-l {
         max-width: 430px;
     }
@@ -1303,12 +1315,58 @@ body{
     .carusel_img {
         position: relative;
         bottom: 0px;
-        right: -30%;
+        right: -20%;
     }
 
     .info_title{
         font-size: 36px;
         line-height: 48px;
+    }
+
+    .understand {
+        padding: 50px 15px;
+    }
+
+    .understand_info {
+        max-width: 290px;
+    }
+
+    .understand_sub_title {
+        margin-bottom: 17px;
+    }
+
+    .understand_title {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -0.357143px;
+        margin-bottom: 18px;
+    }
+
+    .understand_text {
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 30px;
+    }
+
+    .understand_button {
+        width: 290px;
+        margin-bottom: 12px;
+    }
+
+    .understand_button_2 {
+        margin-bottom: 40px;
+    }
+
+    .understand_grid {
+        display: grid;
+        grid-template-columns: repeat(1, 290px);
+        grid-template-rows: repeat(4, 300px);
+        gap: 15px 0;
+        max-width: 290px;
+    }
+
+    .understand_grid_box {
+        padding: 0 0 15px;
     }
 }
 
@@ -1330,7 +1388,7 @@ body{
     .carusel_img {
         position: relative;
         bottom: 0px;
-        right: -30%;
+        right: -5%;
     }
 }
 
@@ -1363,11 +1421,11 @@ body{
 
     .footer_product, .footer_company {
         display: block;
-     }
+    }
     
-     .footer_nav-adapt {
+    .footer_nav-adapt {
         display: none;
-     }
+    }
 
     .footer_social {
         margin-right: 10px;
@@ -1424,6 +1482,10 @@ body{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 0;
+    }
+
+    .logos>div>a>img {
+        max-width: 100%
     }
 
     .main {
@@ -1573,52 +1635,6 @@ body{
         margin-bottom: 40px;
     }
 
-    .understand {
-        padding: 50px 15px;
-    }
-
-    .understand_info {
-        max-width: 290px;
-    }
-
-    .understand_sub_title {
-        margin-bottom: 17px;
-    }
-
-    .understand_title {
-        font-size: 40px;
-        line-height: 40px;
-        letter-spacing: -0.357143px;
-        margin-bottom: 18px;
-    }
-
-    .understand_text {
-        font-size: 24px;
-        line-height: 34px;
-        margin-bottom: 30px;
-    }
-
-    .understand_button {
-        width: 290px;
-        margin-bottom: 12px;
-    }
-
-    .understand_button_2{
-        margin-bottom: 40px;
-        }
-
-    .understand_grid {
-        display: grid;
-        grid-template-columns: repeat(1, 290px);
-        grid-template-rows: repeat(4, 300px);
-        gap: 15px 0;
-        max-width: 290px;
-    }
-
-    .understand_grid_box {
-        padding: 0 0 15px;
-    }
-
     .carusel_info{
         text-align: start;
     }
@@ -1634,7 +1650,7 @@ body{
     .carusel_img {
         position: relative;
         bottom: 0px;
-        right: -30%;
+        right: -1%;
     }
 
     .flex__inbox-column{

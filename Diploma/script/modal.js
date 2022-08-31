@@ -11,3 +11,4 @@ $('.close').on('click', function () {
 $('#open-modal').on('click', function(){
     $('.modal-overlay').fadeIn()
 });
+
