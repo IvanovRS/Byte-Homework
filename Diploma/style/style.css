@@ -700,12 +700,12 @@ body{
 }
 
 .form_input input{
-    max-width: 385px;
+    width: 385px;
     max-height: 48px;
     font-size: 18px;
     line-height: 13px;
     color: #2B292D;
-    padding: 17px 224px 18px 15px;
+    padding: 17px 15px;
     margin-bottom: 10px;
 }
 
