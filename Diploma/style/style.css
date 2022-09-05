@@ -1207,9 +1207,9 @@ body{
     .carusel_img {
         position: relative;
         bottom: 0;
-        right: 0;
-        max-width: 273px;
-        margin: 0 auto;
+        transform: translate(-50%, 0);
+        left: 50%;
+        display: inline-block;
     }
 
     .about_title {
@@ -1373,9 +1373,9 @@ body{
     .carusel_img {
         position: relative;
         bottom: 0;
-        right: 0;
-        max-width: 273px;
-        margin: 0 auto;
+        transform: translate(-50%, 0);
+        left: 50%;
+        display: inline-block;
     }
 
     .form {
@@ -1486,9 +1486,9 @@ body{
     .carusel_img {
         position: relative;
         bottom: 0;
-        right: 0;
-        max-width: 273px;
-        margin: 0 auto;
+        transform: translate(-50%, 0);
+        left: 50%;
+        display: inline-block;
     }
 
     .info_title{
@@ -1561,9 +1561,9 @@ body{
     .carusel_img {
         position: relative;
         bottom: 0;
-        right: 0;
-        max-width: 273px;
-        margin: 0 auto;
+        transform: translate(-50%, 0);
+        left: 50%;
+        display: inline-block;
     }
 }
 
@@ -1825,9 +1825,9 @@ body{
     .carusel_img {
         position: relative;
         bottom: 0;
-        right: 0;
-        max-width: 273px;
-        margin: 0 auto;
+        transform: translate(-50%, 0);
+        left: 50%;
+        display: inline-block;
     }
 
     .flex__inbox-column{
